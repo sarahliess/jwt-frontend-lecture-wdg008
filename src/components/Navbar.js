@@ -1,4 +1,4 @@
-import { NavLink, Navigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar({ loggedIn, setLoggedIn, setToken }) {
   console.log("logged in in Navbar", loggedIn);

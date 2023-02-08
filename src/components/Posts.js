@@ -1,6 +1,4 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import Post from "./Post";
+import { useState } from "react";
 
 export default function Posts({ token }) {
   const [posts, setPosts] = useState([]);
