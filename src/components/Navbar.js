@@ -29,7 +29,17 @@ export default function Navbar({ loggedIn, setLoggedIn, setToken }) {
           </>
         )}
       </ul>
-      {loggedIn && <button>Log out</button>}
+      {loggedIn && (
+        <button
+          onClick={() => {
+            localStorage.removeItem("authtoken");
+            setToken("");
+            setLoggedIn(false);
+          }}
+        >
+          Log out
+        </button>
+      )}
     </nav>
   );
 }
